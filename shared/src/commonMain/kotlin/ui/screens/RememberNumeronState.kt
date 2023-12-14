@@ -18,8 +18,7 @@ fun rememberNumeronState(): NumeronState {
     var history = remember { mutableStateListOf<Result>() } // TODO: replace by `val history by remember { mutableStateListOf<Result>() }`
 
     fun onValueChange(value: String, digit: Int) {
-        val newValue = value.last().toString()
-        if (newValue.toIntOrNull() == null) return
+        val newValue = if(value.isEmpty()) "" else value.last().toString()
         when (digit) {
             1 -> first = newValue
             2 -> second = newValue

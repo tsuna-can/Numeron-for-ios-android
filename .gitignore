@@ -1,7 +1,6 @@
 *.iml
 .gradle
 /local.properties
-/.idea
 .DS_Store
 build/
 /captures
@@ -10,3 +9,10 @@ build/
 iosApp/iosApp.xcworkspace/*
 iosApp/iosApp.xcodeproj/*
 !iosApp/iosApp.xcodeproj/project.pbxproj
+
+/.idea
+
+# Include dictionary files to git
+!/.idea/dictionaries
+/.idea/dictionaries/*
+!/.idea/dictionaries/numeron_dic.xml
